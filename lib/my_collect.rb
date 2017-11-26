@@ -1,3 +1,3 @@
 def my_collect
-  yield
+  yield(argument)
 end
