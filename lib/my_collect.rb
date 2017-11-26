@@ -1,4 +1,6 @@
 def my_collect(argument)
   collection = []
-  yield(argument)
+  if argument.length > 0
+    yield(argument)
+  end
 end
