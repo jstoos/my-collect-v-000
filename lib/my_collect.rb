@@ -4,6 +4,7 @@ def my_collect(argument)
   while argument.length > 0 && count < argument.length
     my_collect(argument).collect do |list|
       yield(list) 
+      count += 1
     end
   end
 end
