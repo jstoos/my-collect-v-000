@@ -1,6 +1,9 @@
 def my_collect(argument)
   collection = []
-  if argument.length > 0
-    yield(argument)
+  count = 0
+  while argument.length > 0 && count < argument.length
+    my_collect(argument).collect do |list|
+      yield(list) 
+    end   
   end
 end
