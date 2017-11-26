@@ -1,3 +1,3 @@
 def my_collect(argument)
-  yield(argument)
+  new_collection <<   yield(argument)
 end
