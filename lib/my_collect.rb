@@ -1,3 +1,4 @@
 def my_collect(argument)
-  yield(argument)
+  collection = []
+  yield(argument) >> collection
 end
